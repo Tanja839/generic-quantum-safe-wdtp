@@ -1,0 +1,16 @@
+---
+version: '3'
+services:
+  paper-poc-generic-iot-pq-wdtp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        user: bob
+        uid: 1000
+        gid: 1000
+    image: fraunhofer-sit/paper-poc-generic-iot-pq-wdtp:1.0.0
+    container_name: paper-poc-generic-iot-pq-wdtp
+    restart: unless-stopped
+    volumes:
+      - ".:/home/bob/poc-repo"

@@ -1,0 +1,9 @@
+# Python
+__pycache__
+
+# keep folders
+!.gitkeep
+
+# VSCode
+.vscode/
+
